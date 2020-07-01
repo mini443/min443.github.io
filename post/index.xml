@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://min443.github.io/post/</link>
+    <link>https://min443.github.io/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jul 2020 00:24:07 +0800</lastBuildDate>
     
-	<atom:link href="http://min443.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://min443.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>php面试高级</title>
-      <link>http://min443.github.io/post/blog/</link>
+      <link>https://min443.github.io/post/blog/</link>
       <pubDate>Thu, 02 Jul 2020 00:24:07 +0800</pubDate>
       
-      <guid>http://min443.github.io/post/blog/</guid>
+      <guid>https://min443.github.io/post/blog/</guid>
       <description>五、PHP综合应用 1.写出下列服务的用途和默认端口（新浪网技术部） ftp、ssh、http、telnet、https
 ftp：File Transfer Protocol，文件传输协议，是应用层的协议，它基于传输层，为用户服务，它们负责进行文件的传输，其默认端口是21。 ssh：Secure Shell，安全外壳协议，建立在应用层和传输层基础上的安全协议。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，其默端口是22。 http：hypertext transport protocol，超文本传送协议，是一种详细规定了浏览器和万维网服务器之间互相通信的规则，通过因特网传送万维网文档的数据传送协议，其默认端口是80。 telnet：Telnet协议是TCP/IP协议族中的一员，是Internet远程登陆服务的标准协议和主要方式。它为用户提供了在本地计算机上完成远程主机工作的能力，其默认端口是23。 https：Hypertext Transfer Protocol over Secure Socket Layer，是以安全为目标的HTTP通道，用于安全的HTTP数据传输，它的主要作用可以分为两种： 一种是建立一个信息安全通道，来保证数据传输的安全； 另一种就是确认网站的真实性，其默认端口是443。 2.你用什么方法检查PHP脚本的执行效率（通常是脚本执行时间）和数据库SQL的效率（通常是数据库Query时间），并定位和分析脚本执行和数据库查询的瓶颈所在？（腾讯） 脚本执行时间，启用xdebug，使用WinCacheGrind分析。 数据库查询，mysql使用EXPLAIN分析查询，启用slow query log记录慢查询。
 [!!!]3.对于大流量的网站,您采用什么样的方法来解决访问量问题? 确认服务器硬件能否支持当前的流量 对于普通的pc server来说，它能够独立支持每天10万个独立ip访问，如果访问量过大，最好更好性能更高的专用服务器。 优化数据库的访问服务器的负载过大，一个重要的原因就是CPU和内存负载过高，而读写数据在这块占据较多的资源。可以从页面静态化、memcache缓存和mysql优化几个方面着手。 禁止外部盗链 占用较大的流量，防盗链，使用reference来判断一下。如果是图片的话，使用添加水印即可很好的防止。 控制大文件的下载 最好把文件下载的容量控制为相对较小的一个值，如果有大文件下载，最好使用专用的服务器。 使用多台主机实现分流，集群 使用流量分析软件进行分析统计谷歌和百度 4.请简单阐述您最得意的开发之作 根据实际情况自由发挥
